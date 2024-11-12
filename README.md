@@ -6,3 +6,5 @@ How to configure playwright to a project from start:
  
 2--Open command pallete (Ctrl+Shift+P) and type (Install Playwright)
    This will add all the dependencies
+
+3--Goto Playwright config file and delete (unnecessary browsers and local dev server code)
