@@ -14,5 +14,5 @@ const test = base.extend<{ homePage: HomePage }>({
 
 test('Check country selected', async ({ homePage }) => {
   // Assert that the country "USA - English" is selected
-  await expect(homePage.countrySelected).toBeVisible();
+  await expect(homePage.acceptCookies).toBeVisible();
 });

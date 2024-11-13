@@ -10,9 +10,9 @@ export default class UrlFactory {
 
     switch (environment) {
       case 'PROD':
-        return process.env.URL_LAERDAL || '';
+        return process.env.URL_MERC || '';
       case 'DEV':
-        return process.env.URL_LAERDAL_DEV || ''; // Optionally, add a development URL here
+        return process.env.URL_MERC_DEV || ''; // Optionally, add a development URL here
       default:
         throw new Error('Environment not set or URL missing');
     }

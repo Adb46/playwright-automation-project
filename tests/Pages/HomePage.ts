@@ -3,11 +3,11 @@ import { Locator, Page, expect } from '@playwright/test';
 export class HomePage{
 
 readonly page: Page;
-readonly countrySelected: Locator;
+readonly acceptCookies: Locator;
 
 
 constructor(page: Page) {
     this.page = page;
-    this.countrySelected = page.locator('//span[normalize-space(text())="USA - English"]')
+    this.acceptCookies = page.locator('wb7-button.button.button--accept-all[data-test="handle-accept-all-button"]')
 }
 }
